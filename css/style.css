@@ -587,7 +587,7 @@ nav {
 */
 
 
-footer {
+/* footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   position: relative;
@@ -619,6 +619,128 @@ footer p {
 }
 .logo:hover {
   transform: scale(1.2);
+}
+
+.facebook {
+  font-size: 1.5em;
+  height: 155px;
+  width: 155px;
+  background-color: rgba(150, 182, 173, 0.918);
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+.photos {
+  color: white;
+  font-size: 1.3em;
+  height: 100px;
+  width: 100px;
+  background-color: rgba(242, 173, 88, 0.705);
+  position: absolute;
+  top: 0px;
+  left: 185px;
+}
+
+.github {
+  color: white;
+  font-size: 1.4em;
+  height: 125px;
+  width: 125px;
+  background-color: rgba(65, 65, 65, 0.805);
+  position: absolute;
+  top: 125px;
+  left: 25px;
+}
+
+.instagram {
+  color: white;
+  height: 85px;
+  width: 85px;
+  background-color: rgba(135, 123, 102, 0.842);
+  position: absolute;
+  top: 30px;
+  left: 55px;
+}
+
+.linkedin {
+  font-size: 1.2em;
+  height: 95px;
+  width: 95px;
+  background-color: rgba(231, 239, 197, 0.829);
+  position: absolute;
+  top: 135px;
+  left: 215px;
+}
+
+.twitter {
+  color: white;
+  height: 65px;
+  width: 65px;
+  background-color: rgba(64, 61, 86, 0.729);
+  position: absolute;
+  top: 100px;
+  left: 280px;
+}
+
+.dogs {
+  height: 50px;
+  width: 50px;
+  background-color: rgba(240, 231, 204, 0.729);
+  position: absolute;
+  top: 8px;
+  left: 120px;
+} */
+
+footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  text-align: center;
+  color: #96B6AD;
+  margin-bottom: 30px;
+  padding: 0 30px;
+}
+
+.logo-box {
+  width: 375px;
+  position: relative;
+  padding-bottom: 300px;
+
+}
+
+.logo {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.logo:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .facebook {
