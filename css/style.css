@@ -111,7 +111,7 @@ nav {
 
 .AK-container {
   position: relative;
-  width: 300px;
+  width: 275px;
 }
 
 .container {
@@ -120,17 +120,17 @@ nav {
 }
 
 .name {
+  color: #f2ad58;
   font-family: 'Sari', 'Roboto', sans-serif;
-  font-size: 2.1em;
-  color: #402a4e;
+  font-size: 2.2em;
   position: absolute;
   top: 100px;
   left: 16px;
-  letter-spacing: 1.1px;
+  /* letter-spacing: 1.1px; */
 }
 
-.kyzer {
-  color: #f2ad58;
+.adrian {
+  color: #402a4e;
 }
 
 .job-title {
