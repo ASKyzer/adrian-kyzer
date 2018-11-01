@@ -370,6 +370,10 @@ border: 1px solid #f7f3e5;
   padding: 0;
 }
 
+.card-img {
+  border-radius: 5px 5px 0 0;
+}
+
 .card-title {
   color: #402a4e;
   text-align: center;
