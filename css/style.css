@@ -310,7 +310,7 @@ nav {
   padding: 10px 20px 20px 20px;
 }
 
-.featured-projects .card-text {
+.featured-card .card-text {
   color: rgb(242, 231, 201);
   font-size: 0.9em;
 }
