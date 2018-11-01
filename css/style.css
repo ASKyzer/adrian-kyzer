@@ -15,6 +15,17 @@ body {
   background-color: #f5f3ee;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;;
+}
+
 nav {
   position: fixed;
   width: 100%;
@@ -35,17 +46,54 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
   color: #675474;
+  font-size: 1em;
   font-weight: bold;
+  transition: all 0.3s 2.5s ease;
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
 }
 
 .menu a:hover {
   color: #857094;
+  cursor: pointer;
   border-bottom: 3px solid #f2ad58;
 }
 
-
-nav img {
-  z-index: 100;
+.nav-logo {
+  z-index: 9999;
 }
 
 .nav-logo {
@@ -53,10 +101,6 @@ nav img {
 }
 
 .bg {
-  /* background-image: url("http://www.onlygfx.com/wp-content/uploads/2018/03/orange-polygonal-background-fade-3.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center; */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -65,20 +109,11 @@ nav img {
   z-index: -10;
 }
 
-/* .bg-overlay {
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -8;
-  background: rgba(255, 255, 255, 0.5);
-} */
-
 .AK-container {
   position: relative;
   width: 275px;
 }
+
 .container {
   font-family: 'Sari', 'Roboto', sans-serif;
   /* max-width: 1200px;; */
@@ -90,7 +125,7 @@ nav img {
   color: #402a4e;
   position: absolute;
   top: 100px;
-  left: 5px;
+  left: 13px;
   letter-spacing: 1.1px;
 }
 
@@ -230,7 +265,7 @@ nav img {
 .title {
   font-family: 'Sari', 'Roboto', sans-serif;
   color: #96B6AD;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: bold;
   margin-top: 2em;
   margin-bottom: 1em;
@@ -374,7 +409,7 @@ nav img {
   left: 75px;
 }
 .white {
-  border-bottom: 20px solid #fff;
+  border-bottom: 20px solid #f5f3ee;
   border-top: 13px solid transparent;
   border-right: 10px solid transparent;
   border-left: 10px solid transparent;
@@ -530,11 +565,13 @@ nav img {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  line-height: 100%;
 }
 
 .card-img-overlay .card-text {
  color: rgba(240, 240, 240);
 }
+
 .card-img-overlay .card-title {
   font-weight: bold;
   color: #E8AF68;
@@ -547,42 +584,42 @@ nav img {
 }
 
 .btn {
+  color: white;
   display: inline;
   border: 1px solid #413C58;
   cursor: cursor;
   width: 90px;
-  height: 30px;
-  background-image: linear-gradient(to top right, rgb(28, 6, 31) , rgb(138, 65, 141));
+  /* height: 30px; */
+  background-image: linear-gradient(to right, #3d2b4c , #775174);
   float: right;
   margin: 0 5px;
   display: flex;
   justify-content: center;
 }
 
-.btn a {
-  color: white;
-  font-size: 12px;
-  text-decoration: none;
+.btn:hover {
+color: #f7f3e5;
+border: 1px solid #f7f3e5;
 }
 
 .other-projects-row .card {
+  background-color: #F2E7C9;
   background-image: url("http://www.onlygfx.com/wp-content/uploads/2018/03/orange-polygonal-background-fade-3.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  /* background-color: #F2E7C9; */
   margin-top: 2em;
 }
 
 
 /*
   -------------------------------
-  FOOTER SECTION WITH MEDIA LINKS
+  SOCIAL MEDIA LINKS IN CIRCLES
   -------------------------------
 */
 
 
-footer {
+.social-media-circles {
   margin-top: 50px;
   /* border-top: 1px solid #ddd; */
   position: relative;
@@ -592,7 +629,7 @@ footer {
   align-items: center;
 }
 
-footer p {
+.social-media-circles p {
   text-align: center;
   color: #96B6AD;
   margin-bottom: 30px;
@@ -611,13 +648,19 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
 }
 .logo:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  box-shadow: 2px 2px 20px rgb(92, 90, 90);
+  z-index: 55;
 }
 
 .facebook {
+  color: #3D2B4C;
   font-size: 1.5em;
+  font-weight: bold; 
   height: 155px;
   width: 155px;
   background-color: rgba(150, 182, 173, 0.918);
@@ -628,7 +671,7 @@ footer p {
 
 .photos {
   /* color: white; */
-  font-size: 1.3em;
+  font-size: 1.4em;
   height: 100px;
   width: 100px;
   background-color: rgba(242, 173, 88, 0.705);
@@ -681,7 +724,6 @@ footer p {
 .dogs {
   height: 50px;
   width: 50px;
-  /* background-image: linear-gradient(red, yellow); */
   background-color: #b49998d8;
   color: white;
   position: absolute;
@@ -689,124 +731,14 @@ footer p {
   left: 120px;
 }
 
-/* footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+footer {
+  text-align: center;
+  color: #8eb7ad;
+  background-color: #413C58;
+  height: 100px;
+  margin-top: 20px;
 }
 
 footer p {
-  text-align: center;
-  color: #96B6AD;
-  margin-bottom: 30px;
-  padding: 0 30px;
+  line-height: 100px;
 }
-
-.logo-box {
-  width: 375px;
-  position: relative;
-  padding-bottom: 300px;
-
-}
-
-.logo {
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.logo:hover {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.facebook {
-  font-size: 1.5em;
-  height: 155px;
-  width: 155px;
-  background-color: rgba(150, 182, 173, 0.918);
-  position: absolute;
-  top: 50px;
-  left: 100px;
-}
-
-.photos {
-  color: white;
-  font-size: 1.3em;
-  height: 100px;
-  width: 100px;
-  background-color: rgba(242, 173, 88, 0.705);
-  position: absolute;
-  top: 0px;
-  left: 185px;
-}
-
-.github {
-  color: white;
-  font-size: 1.4em;
-  height: 125px;
-  width: 125px;
-  background-color: rgba(65, 65, 65, 0.805);
-  position: absolute;
-  top: 125px;
-  left: 25px;
-}
-
-.instagram {
-  color: white;
-  height: 85px;
-  width: 85px;
-  background-color: rgba(135, 123, 102, 0.842);
-  position: absolute;
-  top: 30px;
-  left: 55px;
-}
-
-.linkedin {
-  font-size: 1.2em;
-  height: 95px;
-  width: 95px;
-  background-color: rgba(231, 239, 197, 0.829);
-  position: absolute;
-  top: 135px;
-  left: 215px;
-}
-
-.twitter {
-  color: white;
-  height: 65px;
-  width: 65px;
-  background-color: rgba(64, 61, 86, 0.729);
-  position: absolute;
-  top: 100px;
-  left: 280px;
-}
-
-.dogs {
-  height: 50px;
-  width: 50px;
-  background-color: rgba(240, 231, 204, 0.729);
-  position: absolute;
-  top: 8px;
-  left: 120px;
-} */
