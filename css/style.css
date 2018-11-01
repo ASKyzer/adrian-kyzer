@@ -329,8 +329,8 @@ nav {
 }
 
 .featured-links a:hover {
-  color: #E8AF68;
   font-weight: bold;
+  border-bottom: 3px solid #E8AF68;
 }
 
 .btn {
@@ -348,7 +348,7 @@ nav {
 }
 
 .btn:hover {
-color: #f7f3e5;
+color: #E8AF68;
 border: 1px solid #f7f3e5;
 }
 
