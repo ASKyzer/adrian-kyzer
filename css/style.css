@@ -324,6 +324,17 @@ nav {
   font-weight: bold;
 }
 
+.featured-links a {
+  color: #96B6AD;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.featured-links a:hover {
+  color: #E8AF68;
+  font-weight: bold;
+}
+
 .btn {
   color: white;
   display: inline;
