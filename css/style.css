@@ -23,6 +23,7 @@ nav {
   box-shadow: 0px 0px 1px #ccc;
   padding: 5px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-family: 'Sari', 'Roboto', sans-serif;
@@ -33,13 +34,13 @@ nav {
   padding-bottom: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #402a4e;
+  color: #675474;
   font-weight: bold;
 }
 
 .menu a:hover {
-  color: #dc6a62;
-  border-bottom: 3px solid #402a4e;
+  color: #857094;
+  border-bottom: 3px solid #f2ad58;
 }
 
 
