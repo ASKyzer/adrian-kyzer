@@ -1,17 +1,50 @@
+@font-face {
+  font-family: 'Absara Sans';
+  src: url('AbsaraSansTF-Regular.otf') format("truetype");
+}
+@font-face {
+  font-family: 'Sari';
+  src: url('Sari-Regular.otf') format("truetype");
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Sari''Roboto', sans-serif;
   line-height: 1.4;
   margin: 0;
   padding: 0;
+  background-color: #f5f3ee;
 }
 
 nav {
   position: fixed;
   width: 100%;
-  z-index: 9999;
+  z-index: 99;
   background-color: white;
   box-shadow: 0px 0px 1px #ccc;
-  padding: 5px
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Sari', 'Roboto', sans-serif;
+}
+
+.menu a {
+  margin-right: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #402a4e;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #dc6a62;
+  border-bottom: 3px solid #402a4e;
+}
+
+
+nav img {
+  z-index: 100;
 }
 
 .nav-logo {
@@ -46,12 +79,13 @@ nav {
   width: 275px;
 }
 .container {
+  font-family: 'Sari', 'Roboto', sans-serif;
   /* max-width: 1200px;; */
 }
 
 .name {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.3em;
+  font-family: 'Sari', 'Roboto', sans-serif;
+  font-size: 2.2em;
   color: #402a4e;
   position: absolute;
   top: 100px;
@@ -65,7 +99,7 @@ nav {
 
 .job-title {
   color: #8eb7ad;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   font-size: 1.3em;
   text-transform: uppercase;
   position: absolute;
@@ -193,28 +227,33 @@ nav {
 */
 
 .title {
+  font-family: 'Sari', 'Roboto', sans-serif;
   color: #96B6AD;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: bold;
   margin-top: 2em;
   margin-bottom: 1em;
   text-align: center;
   background: transparent;
+  text-decoration: underline;
+  text-decoration-color: #E8AF68;
 
 }
 
-.other-projects { 
-  margin-top: 0;
-  margin-bottom: 0;
+.other-projects-title { 
+ /* margin: 0; */
+ margin-top: 1em;
+ margin-bottom: 0;
 }
 
 .featured-projects .card-text {
-  font-size: 0.5em;
+  font-size: 0.8em;
 }
 .card {
   border: 1px solid #402a4e;
   box-shadow: 0px 5px 5px #aaa;
   /* margin: 0 1em 2em 1em; */
+  font-family: 'Sari', 'Roboto', sans-serif;
   margin-bottom: 1em;
   padding: 0;
 }
@@ -247,23 +286,10 @@ nav {
 .about-col {
   /* height: 100%; */
   background-color: #413C58;
-  color: #F2E7C9;
+  color: rgb(242, 231, 201);
   padding: 10px 15px;
 
 }
-
-/* .profile-picture {
-  border-radius: 50%;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
-  border: 3px solid black;
-  max-width: 250px;
-  height: 250px;
-  position: absolute;
-  position: absolute;
-    top: -125px;
-    right: 50px;
-    z-index: 20;
-} */
 
 .me-title h3 {
   font-size: 1.3em;
@@ -271,10 +297,10 @@ nav {
   color: #dc6a62;
 }
 
-
-
 /*
-  AK TRIAGLES CSS
+  -------------------------
+  AK INITIALS TRIANGLES CSS
+  -------------------------
 */
 
 .triangle {
@@ -469,31 +495,7 @@ nav {
   }
 }
 
-/* @keyframes triangle-float-in {
-  0% {
-    transform: scale(30);
-    top: 1600px;
-    left: 1600px;      
-  }
-  50% {
-    top: 500px;
-    left: -2000px;
-  }
-  100% {
-    transform: scale(1);     
-  }
-} */
-
 /* The Letter A */
-/* .red { animation: triangle-float-in .65s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.green { animation: triangle-float-in .6s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.yellow { animation: triangle-float-in .55s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.orange { animation: triangle-float-in .45s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.blue { animation: triangle-float-in .5s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.purple { animation: triangle-float-in .4s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.white { animation: triangle-float-in .7s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.teal { animation: triangle-float-in .3s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.magenta { animation: triangle-float-in .34s  cubic-bezier(0.175, 0.885, 0.32, 1.275); } */
 .red { -webkit-animation: triangle-float-in .65s cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in .65s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 .green { -webkit-animation: triangle-float-in .6s  cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in .6s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 .yellow { -webkit-animation: triangle-float-in .55s  cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in .55s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
@@ -503,17 +505,8 @@ nav {
 .white { -webkit-animation: triangle-float-in .7s  cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in .7s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 .teal { -webkit-animation: triangle-float-in .3s  cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in .3s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 .magenta { -webkit-animation: triangle-float-in .34s  cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in .34s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-/* The Letter K */
-/* .k-coral { animation: triangle-float-in 1.1s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.k-magenta { animation: triangle-float-in 1.3s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.k-yellow { animation: triangle-float-in 1.05s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.k-blue { animation: triangle-float-in 1s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.k-black { animation: triangle-float-in .95s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.k-green { animation: triangle-float-in .9s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.k-gray { animation: triangle-float-in .85s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.k-violet { animation: triangle-float-in .8s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.k-black2 { animation: triangle-float-in .75s  cubic-bezier(0.175, 0.885, 0.32, 1.275); } */
 
+/* The Letter K */
 .k-coral { -webkit-animation: triangle-float-in 1.1s  cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in 1.1s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 .k-magenta { -webkit-animation: triangle-float-in 1.3s  cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in 1.3s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 .k-yellow { -webkit-animation: triangle-float-in 1.05s  cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in 1.05s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
@@ -524,13 +517,18 @@ nav {
 .k-violet { -webkit-animation: triangle-float-in .8s  cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in .8s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 .k-black2 { -webkit-animation: triangle-float-in .75s  cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in .75s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
+/*
+  -------------------------------
+  FEATURED PROJECTS IMAGE OVERLAY
+  -------------------------------
+*/
+
 .card-img-overlay {
   background-color:rgba(0,0,0,0.5);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  
 }
 
 .card-img-overlay .card-text {
@@ -549,19 +547,15 @@ nav {
 
 .btn {
   display: inline;
+  border: 1px solid #413C58;
   cursor: cursor;
   width: 90px;
   height: 30px;
-  background-color: #96B6AD;
+  background-image: linear-gradient(to top right, rgb(28, 6, 31) , rgb(138, 65, 141));
   float: right;
   margin: 0 5px;
   display: flex;
   justify-content: center;
-}
-
-.btn:hover {
-  /* border: none; */
-  background-color: #3D2B4C;
 }
 
 .btn a {
@@ -587,9 +581,9 @@ nav {
 */
 
 
-/* footer {
+footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
+  /* border-top: 1px solid #ddd; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -607,7 +601,7 @@ footer p {
 .logo-box {
   width: 375px;
   position: relative;
-  padding-bottom: 300px;
+  padding-bottom: 280px;
 
 }
 
@@ -632,14 +626,14 @@ footer p {
 }
 
 .photos {
-  color: white;
+  /* color: white; */
   font-size: 1.3em;
   height: 100px;
   width: 100px;
   background-color: rgba(242, 173, 88, 0.705);
   position: absolute;
   top: 0px;
-  left: 185px;
+  left: 195px;
 }
 
 .github {
@@ -667,7 +661,7 @@ footer p {
   font-size: 1.2em;
   height: 95px;
   width: 95px;
-  background-color: rgba(231, 239, 197, 0.829);
+  background-color: rgba(231, 239, 197, 0.897);
   position: absolute;
   top: 135px;
   left: 215px;
@@ -686,13 +680,15 @@ footer p {
 .dogs {
   height: 50px;
   width: 50px;
-  background-color: rgba(240, 231, 204, 0.729);
+  /* background-image: linear-gradient(red, yellow); */
+  background-color: #b49998d8;
+  color: white;
   position: absolute;
   top: 8px;
   left: 120px;
-} */
+}
 
-footer {
+/* footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   position: relative;
@@ -812,4 +808,4 @@ footer p {
   position: absolute;
   top: 8px;
   left: 120px;
-}
+} */
