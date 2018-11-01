@@ -48,14 +48,12 @@ nav {
   color: #675474;
   font-size: 1em;
   font-weight: bold;
-  /* transition: all 0.3s 2.5s ease; */
 }
 
 .menu a:hover {
   color: #857094;
   cursor: pointer;
   border-bottom: 3px solid #f2ad58;
-  z-index: 100;
 }
 
 .text-focus-in {
@@ -157,6 +155,7 @@ nav {
   position: absolute;
   bottom: 0;
   font-size: 2em;
+  font-weight: bold;
   color: #f0e7cc;
   margin-bottom: 10px;
 }
@@ -282,8 +281,7 @@ nav {
   text-align: center;
   background: transparent;
   text-decoration: underline;
-  text-decoration-color: #E8AF68;
-
+  -webkit-text-decoration-color: #E8AF68;  text-decoration-color: #E8AF68;
 }
 
 .other-projects-title { 
