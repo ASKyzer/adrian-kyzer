@@ -495,7 +495,7 @@ border: 1px solid #f7f3e5;
   position: relative;
   top: -50px;
   left: 150px;
-  /* z-index: -1; */
+  z-index: 10;
 }
 .k-coral {
   border-top: 25px solid #f2ad58;
@@ -511,7 +511,7 @@ border: 1px solid #f7f3e5;
   border-right: 18px solid transparent;
   border-left: 19px solid transparent;
   top: -3px;
-  left: 196px;
+  left: 195px;
 }
 .k-blue {
   border-bottom: 49px solid #f2ad58;
@@ -526,7 +526,7 @@ border: 1px solid #f7f3e5;
   border-bottom: 3px solid transparent;
   border-right: 34px solid transparent;
   border-left: 4px solid transparent;
-  top: -50px;
+  top: -52px;
   left: 228px;
 }
 .k-green {
@@ -707,7 +707,7 @@ border: 1px solid #f7f3e5;
   color: white;
   height: 85px;
   width: 85px;
-  background-color: rgba(135, 123, 102, 0.842);
+  background-color: #ce7067cb;
   position: absolute;
   top: 30px;
   left: 55px;
@@ -736,8 +736,9 @@ border: 1px solid #f7f3e5;
 .dogs {
   height: 50px;
   width: 50px;
-  background-color: #b49998d8;
+  background-color: rgba(135, 123, 102, 0.842);
   color: white;
+  font-size: 0.9em;
   position: absolute;
   top: 8px;
   left: 120px;
