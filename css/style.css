@@ -502,11 +502,11 @@ nav {
   0% {
     -webkit-transform: scale(30);
             transform: scale(30);
-    top: 1600px;
-    left: 1600px;      
+    bottom: 1600px;
+    right: -1600px;      
   }
   50% {
-    top: 500px;
+    top: 1500px;
     left: -2000px;
   }
   100% {
@@ -514,7 +514,7 @@ nav {
             transform: scale(1);     
   }
 }
-@keyframes triangle-float-in {
+/* @keyframes triangle-float-in {
   0% {
     -webkit-transform: scale(30);
             transform: scale(30);
@@ -529,7 +529,7 @@ nav {
     -webkit-transform: scale(1);
             transform: scale(1);     
   }
-}
+} */
 
 /* The Letter A */
 .red { -webkit-animation: triangle-float-in .65s cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in .65s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
