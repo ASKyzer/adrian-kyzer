@@ -119,19 +119,26 @@ nav {
   /* max-width: 1200px;; */
 }
 
-.name {
-  color: #f2ad58;
+.adrian {
+  color: #3d2b4c;
   font-family: 'Sari', 'Roboto', sans-serif;
-  font-size: 2.2em;
+  font-size: 2.3em;
   position: absolute;
   top: 100px;
   left: 16px;
   /* letter-spacing: 1.1px; */
 }
 
-.adrian {
-  color: #402a4e;
+.kyzer {
+  color: #f2ad58;
+  font-family: 'Sari', 'Roboto', sans-serif;
+  font-size: 2.3em;
+  position: absolute;
+  top: 100px;
+  left: 160px;
+  /* letter-spacing: 1.1px; */
 }
+
 
 .job-title {
   color: #8eb7ad;
@@ -140,7 +147,7 @@ nav {
   text-transform: uppercase;
   position: absolute;
   top: 150px;
-  left: 65px;
+  left: 70px;
 }
 
 .down-arrow {
