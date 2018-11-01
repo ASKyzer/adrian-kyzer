@@ -285,7 +285,6 @@ nav {
 }
 
 .other-projects-title { 
- /* margin: 0; */
  margin-top: 1em;
  margin-bottom: 0;
 }
@@ -297,9 +296,8 @@ nav {
 */
 
 
-.card-img-overlay {
-  background-color:rgba(0,0,0,0.5);
-  color: rgba(240, 240, 240);
+.featured-card {
+  color: #CE7067;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -307,13 +305,19 @@ nav {
   line-height: 100%;
 }
 
-.card-img-overlay .card-text {
- color: rgba(240, 240, 240);
+.featured-card {
+  background-color: #413C58;
+  padding: 10px 20px 20px 20px;
 }
 
-.card-img-overlay .card-title {
+.featured-projects .card-text {
+  color: rgb(242, 231, 201);
+  font-size: 0.9em;
+}
+
+.featured-card .card-title {
   font-weight: bold;
-  color: #E8AF68;
+  color: #CE7067;
 }
 
 .other-projects-row .card-title {
@@ -338,13 +342,10 @@ nav {
   display: inline;
   border: 1px solid #413C58;
   cursor: cursor;
-  width: 90px;
-  /* height: 30px; */
+  width: 80px;
   background-image: linear-gradient(to right, #3d2b4c , #775174);
   float: right;
   margin: 0 5px;
-  display: flex;
-  justify-content: center;
 }
 
 .btn:hover {
@@ -361,16 +362,9 @@ border: 1px solid #f7f3e5;
   margin-top: 2em;
 }
 
-
-
-.featured-projects .card-text {
-  color: white!important;
-  font-size: 0.8em;
-}
 .card {
   border: 1px solid #402a4e;
   box-shadow: 0px 5px 5px #aaa;
-  /* margin: 0 1em 2em 1em; */
   font-family: 'Sari', 'Roboto', sans-serif;
   margin-bottom: 1em;
   padding: 0;
@@ -396,17 +390,12 @@ border: 1px solid #f7f3e5;
   margin-top: 3em;
 }
 
-.about {
-  height: 100%;
-  /* margin-top: 120px; */
-}
-
 .about-col {
-  /* height: 100%; */
+  border-radius: 5px;
   background-color: #413C58;
+  box-shadow: 0px 5px 5px #aaa;
   color: rgb(242, 231, 201);
   padding: 10px 15px;
-
 }
 
 .me-title h3 {
