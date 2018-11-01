@@ -51,17 +51,25 @@ nav {
   transition: all 0.3s 2.5s ease;
 }
 
-.text-focus-in {
+.menu a:hover {
+  color: #857094;
+  cursor: pointer;
+  border: 3px solid #f2ad58;
+  z-index: 100;
+}
+
+/* .text-focus-in {
 	-webkit-animation: text-focus-in 1s 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
+} */
 
 /**
  * ----------------------------------------
  * animation text-focus-in
  * ----------------------------------------
  */
- @-webkit-keyframes text-focus-in {
+
+ /* @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
             filter: blur(12px);
@@ -84,13 +92,8 @@ nav {
             filter: blur(0px);
     opacity: 1;
   }
-}
+} */
 
-.menu a:hover {
-  color: #857094;
-  cursor: pointer;
-  border-bottom: 3px solid #f2ad58;
-}
 
 .nav-logo {
   z-index: 9999;
@@ -125,7 +128,7 @@ nav {
   font-size: 2.3em;
   position: absolute;
   top: 100px;
-  left: 16px;
+  left: 13px;
   /* letter-spacing: 1.1px; */
 }
 
@@ -289,7 +292,69 @@ nav {
  margin-bottom: 0;
 }
 
+/*
+  -------------------------------
+  FEATURED PROJECTS IMAGE OVERLAY
+  -------------------------------
+*/
+
+
+.card-img-overlay {
+  background-color:rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  line-height: 100%;
+}
+
+.card-img-overlay .card-text {
+ color: rgba(240, 240, 240);
+}
+
+.card-img-overlay .card-title {
+  font-weight: bold;
+  color: #E8AF68;
+}
+
+.other-projects-row .card-title {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.btn {
+  color: white;
+  display: inline;
+  border: 1px solid #413C58;
+  cursor: cursor;
+  width: 90px;
+  /* height: 30px; */
+  background-image: linear-gradient(to right, #3d2b4c , #775174);
+  float: right;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn:hover {
+color: #f7f3e5;
+border: 1px solid #f7f3e5;
+}
+
+.other-projects-row .card {
+  background-color: #F2E7C9;
+  background-image: url("http://www.onlygfx.com/wp-content/uploads/2018/03/orange-polygonal-background-fade-3.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 2em;
+}
+
+
+
 .featured-projects .card-text {
+  color: white!important;
   font-size: 0.8em;
 }
 .card {
@@ -521,22 +586,22 @@ nav {
             transform: scale(1);     
   }
 }
-/* @keyframes triangle-float-in {
+@keyframes triangle-float-in {
   0% {
     -webkit-transform: scale(30);
             transform: scale(30);
     top: 1600px;
-    left: 1600px;      
+    left: -1600px;      
   }
   50% {
-    top: 500px;
+    top: 1500px;
     left: -2000px;
   }
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);     
   }
-} */
+}
 
 /* The Letter A */
 .red { -webkit-animation: triangle-float-in .65s cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in .65s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
@@ -559,65 +624,6 @@ nav {
 .k-gray { -webkit-animation: triangle-float-in .85s  cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in .85s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 .k-violet { -webkit-animation: triangle-float-in .8s  cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in .8s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 .k-black2 { -webkit-animation: triangle-float-in .75s  cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: triangle-float-in .75s  cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-
-/*
-  -------------------------------
-  FEATURED PROJECTS IMAGE OVERLAY
-  -------------------------------
-*/
-
-.card-img-overlay {
-  background-color:rgba(0,0,0,0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  line-height: 100%;
-}
-
-.card-img-overlay .card-text {
- color: rgba(240, 240, 240);
-}
-
-.card-img-overlay .card-title {
-  font-weight: bold;
-  color: #E8AF68;
-}
-
-.other-projects-row .card-title {
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.btn {
-  color: white;
-  display: inline;
-  border: 1px solid #413C58;
-  cursor: cursor;
-  width: 90px;
-  /* height: 30px; */
-  background-image: linear-gradient(to right, #3d2b4c , #775174);
-  float: right;
-  margin: 0 5px;
-  display: flex;
-  justify-content: center;
-}
-
-.btn:hover {
-color: #f7f3e5;
-border: 1px solid #f7f3e5;
-}
-
-.other-projects-row .card {
-  background-color: #F2E7C9;
-  background-image: url("http://www.onlygfx.com/wp-content/uploads/2018/03/orange-polygonal-background-fade-3.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  margin-top: 2em;
-}
-
 
 /*
   -------------------------------
