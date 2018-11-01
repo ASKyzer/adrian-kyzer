@@ -325,7 +325,7 @@ nav {
 }
 
 .featured-links a {
-  color: #96B6AD;
+  color: #96B6AD!important;
   font-weight: bold;
   margin: 0 20px;
 }
