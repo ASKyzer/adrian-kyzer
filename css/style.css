@@ -55,11 +55,11 @@ nav {
   cursor: pointer;
   border-bottom: 3px solid #f2ad58;
 }
-
+/* 
 .text-focus-in {
 	-webkit-animation: text-focus-in 1s 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
+} */
 
 /**
  * ----------------------------------------
@@ -67,7 +67,7 @@ nav {
  * ----------------------------------------
  */
 
- @-webkit-keyframes text-focus-in {
+ /* @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
             filter: blur(12px);
@@ -90,7 +90,7 @@ nav {
             filter: blur(0px);
     opacity: 1;
   }
-}
+} */
 
 
 .nav-logo {
