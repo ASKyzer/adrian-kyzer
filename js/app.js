@@ -21,8 +21,6 @@ projectsRef.on('child_added', snap => {
   // Get projects
   const project = snap.val();
   const keys = Object.keys(project);
-  console.log(project)
-  console.log(keys)
   // Call add project method
   renderProjects(project);
 })
