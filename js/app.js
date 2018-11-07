@@ -117,8 +117,8 @@ function renderProjects(project) {
     }
     if(project.deployed_url !== "") {
       featured ?
-      siteBtn = `<a href="${project.site_url}" target="_blank">SITE</a>` :
-      siteBtn = `<a href="${project.site_url}" target="_blank"><button class="btn btn-light">SITE</button></a>`;
+      siteBtn = `<a href="${project.deployed_url}" target="_blank">SITE</a>` :
+      siteBtn = `<a href="${project.deployed_url}" target="_blank"><button class="btn btn-light">SITE</button></a>`;
     }
     if(project.other_url.name !== "") {
       otherBtn = `<a href="${project.other_url.url}" target="_blank"><button class="btn btn-light">${project.other_url.name}</button></a>`;
