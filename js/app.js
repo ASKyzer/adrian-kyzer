@@ -113,7 +113,7 @@ function renderProjects(project) {
     if(project.repo_url !== "") {
       featured ?
       repoBtn = `<a href="${project.repo_url}" target="_blank">REPO</a>` :
-      repoBtn = `<a href="${project.site_url}" target="_blank"><button class="btn btn-light">REPO</button></a>`;
+      repoBtn = `<a href="${project.repo_url}" target="_blank"><button class="btn btn-light">REPO</button></a>`;
     }
     if(project.deployed_url !== "") {
       featured ?
