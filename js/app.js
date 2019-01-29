@@ -128,10 +128,10 @@ function renderProjects(project) {
     featured ? 
       (resultsDiv = document.querySelector('.featured-projects')) && 
       (markup = `
-        <div class="col-lg-6">
-          <div class="card bg-light">
+        <div class="col-lg-6 mt-3">
+          <div class="card bg-light h-100">
             <img class="card-img" src="${project.image_url}" alt="${project.title}">
-            <div class="featured-card">
+            <div class="featured-card h-100">
               <h5 class="card-title">${project.title}</h5>
               <p class="card-text">${project.description}</p>
               <p class="card-text build-tools">${project.build_tools}</p>
